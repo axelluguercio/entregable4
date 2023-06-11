@@ -1,0 +1,321 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* Estilos del hero */
+.hero {
+  background-image: url('../img/banner.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Estilos de la sección Acerca de */
+.about {
+  background-color: #fff;
+  padding: 40px;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+/* Estilos de Casos de éxito */
+.success-stories {
+  background-color: #f5f5f5;
+  padding: 40px;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+/* Estilos del llamado a la acción */
+.call-to-action {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+background-color: #555;
+}
+
+/* Estilos de la sección Acerca de */
+.about {
+  background-color: #fff;
+  padding: 40px;
+}
+
+.about h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Estilos de la sección de inicio de sesión y registro */
+.login-section {
+  background-color: #f5f5f5;
+  padding: 40px;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #555;
+}
+
+.login-form p {
+  margin-top: 10px;
+}
+
+.login-form a {
+  color: #333;
+  text-decoration: underline;
+}
+
+
+/* Estilos de Casos de éxito */
+.success-stories {
+  background-color: #f5f5f5;
+  padding: 40px;
+}
+
+.success-stories h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.success-stories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+/* Estilos del llamado a la acción */
+.call-to-action {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+}
+
+.call-to-action h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.call-to-action .cta-button {
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.call-to-action .cta-button:hover {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Media queries para la responsividad */
+@media screen and (max-width: 768px) {
+  /* Agrega estilos específicos para dispositivos móviles y tablets */
+  header {
+    padding: 10px;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  .hero {
+    height: 300px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .cta-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .about,
+  .success-stories,
+  .call-to-action {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Agrega estilos específicos para dispositivos móviles más pequeños */
+  .hero {
+    height: 200px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .cta-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .about,
+  .success-stories,
+  .call-to-action {
+    padding: 10px;
+  }
+}
