@@ -1,5 +1,5 @@
 // Verificar si el usuario está autenticado (ejemplo con una variable booleana)
-const isAuthenticated = false; 
+const isAuthenticated = true; 
 
 // Obtener la referencia a la sección restringida
 const restrictedArea = document.getElementById('restricted-area');
