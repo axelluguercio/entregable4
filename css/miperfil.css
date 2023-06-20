@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Estilos para el formulario */
 .profile-form {
     max-width: 500px;
@@ -75,4 +81,101 @@
     margin-bottom: 20px;
   }
   
-  
+  .container-slider{
+    max-width:600px;
+    height: 300px;
+    margin: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+
+  }
+
+  input[type="radio"]{
+    display: none;
+  }
+
+  .contenedor{
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 600px;
+    transform-style: preserve-3d;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .cards{
+    position: inherit;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card{
+    position:absolute;
+    width: 60%;
+    height: 100%;
+    left:0;
+    right: 0;
+    margin:auto;
+    cursor: pointer;
+  }
+  img{
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  #item2:checked ~ .cards #selector1,
+  #item1:checked ~ .cards #selector3,
+  #item3:checked ~ .cards #selector2{
+    transform: translateX(-40%) scale(0.8);  
+    z-index:0;
+    }
+  #item3:checked ~ .cards #selector1,
+  #item1:checked ~ .cards #selector2,
+  #item2:checked ~ .cards #selector3{
+    transform: translateX(40%) scale(0.8); 
+    z-index: 0; 
+  }
+  #item1:checked ~ .cards #selector1,
+  #item2:checked ~ .cards #selector2,
+  #item3:checked ~ .cards #selector3{
+    transform: translateX(0%) scale(1); 
+    z-index: 1; 
+  }
+
+  .slider2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+  }
+  .slider-section{
+    display:flex ;
+    width:600px;
+    height: 430px;
+  }
+
+  .slider-section img{
+    width:0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+
+
+  }
+
+  .slider-section img:hover{
+    
+    cursor:crosshair;
+    width: 300px;
+    opacity:1;
+    filter:contrast(120%);
+  }

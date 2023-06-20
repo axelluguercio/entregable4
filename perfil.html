@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,12 @@
   <link rel="stylesheet" href="css/busqueda.css">
   <link rel="stylesheet" href="css/inicio.css">
   <link rel="stylesheet" href="css/miperfil.css">
+ 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-
+  
 </head>
+
 <body>
   <header>
     <nav>
@@ -29,66 +32,76 @@
   </header>
 
 
-    <main>
-        <section class="profile-section">
-        <h1>Mi Perfil</h1>
-        <form class="profile-form" action="#" method="POST">
-            <div class="form-group">
+  <main>
+    <section class="profile-section">
+      <h1>Mi Perfil</h1>
+      <form class="profile-form" action="#" method="POST">
+        <div class="form-group">
 
-            <div class="form-group">
+          <div class="form-group">
             <label for="telefono">Contacto</label>
             <input type="text" id="apellido" name="apellido" required>
-            </div>
+          </div>
 
-            <div class="form-group">
-                <label for="interests">Intereses:</label>
-                <select id="interests" name="interests" size="5">
-                  <option value="1">Deportes</option>
-                  <option value="2">Arte y cultura</option>
-                  <option value="3">Música</option>
-                  <option value="4">Viajes</option>
-                  <option value="5">Cocina</option>
-                  <option value="6">Tecnología</option>
-                  <option value="7">Manualidades</option>
-                  <option value="8">Fotografía</option>
-                  <option value="9">Jardinería</option>
-                  <option value="10">Animales</option>
-                </select>
-            </div>
+          <div class="form-group">
+            <label for="interests">Intereses:</label>
+            <select id="mySelect" multiple>
+              <option value="1">Deportes</option>
+              <option value="2">Arte y cultura</option>
+              <option value="3">Música</option>
+              <option value="4">Viajes</option>
+              <option value="5">Cocina</option>
+              <option value="6">Tecnología</option>
+              <option value="7">Manualidades</option>
+              <option value="8">Fotografía</option>
+              <option value="9">Jardinería</option>
+              <option value="10">Animales</option>
+            </select>
+          </div>
+          
+          <button type="submit">Guardar</button>
+      </form>
+    </section>
 
+    <h2>Slider opcion 1</h2>
+    <div class="container-slider">
+      <div class="contenedor">
+        <input type="radio" name="slider" id="item1" checked>
+        <input type="radio" name="slider" id="item2">
+        <input type="radio" name="slider" id="item3">
 
-            <button type="submit">Guardar</button>
-        </form>
-        </section>
+        <div class="cards">
+          <label class="card" for="item1" id="selector1">
+            <img src="./img/perro1.jpg" alt="">
+          </label>
+          <label class="card" for="item2" id="selector2">
+            <img src="./img/perro2.jpg" alt="">
+          </label>
+          <label class="card" for="item3" id="selector3">
+            <img src="./img/perro3.jpg" alt="">
+          </label>
+          
+        </div>
+      </div>
+    </div>
+    <h2>Slider opcion 2</h2>
+    <div class="slider2">
+      <section class="slider-section">
+        <img src="./img/perro1.jpg" alt="">
+        <img src="./img/perro2.jpg" alt="">
+        <img src="./img/perro3.jpg" alt="">
+        <img src="./img/perro4.jpg" alt="">
+        <img src="./img/perro5.jpg" alt="">
+        
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>Derechos de autor &copy; 2023 APOAA. Todos los derechos reservados.</p>
+  </footer>
+  <script src="session.js"></script>
+  <script src="script.js"></script>
 
-        <section class="news-section">
-            <h2>Noticias de interés</h2>
-            <div class="news-slider">
-              <div class="news-slide">
-                <div class="news-container">
-                  <h3>Noticia 1</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-              </div>
-              <div class="news-slide">
-                <div class="news-container">
-                  <h3>Noticia 2</h3>
-                  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-              </div>
-              <div class="news-slide">
-                <div class="news-container">
-                  <h3>Noticia 3</h3>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                </div>
-              </div>
-            </div>
-          </section>
-    </main>
-    <footer>
-        <p>Derechos de autor &copy; 2023 APOAA. Todos los derechos reservados.</p>
-      </footer>
-      <script src="session.js"></script>
-      <script src="script.js"></script>
-    </body>
+</body>
+
 </html>
