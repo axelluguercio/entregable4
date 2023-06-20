@@ -3,7 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.btn-nav{
+  display:flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
 /* Estilos para el formulario */
 .profile-form {
     max-width: 500px;

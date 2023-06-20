@@ -1,68 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio - APOAA</title>
-  <link rel="stylesheet" href="css/busqueda.css">
-  <link rel="stylesheet" href="css/inicio.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio - APOAA</title>
+    <link rel="stylesheet" href="css/busqueda.css" />
+    <link rel="stylesheet" href="css/inicio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li id="search-li">
+            <div class="search-container">
+              <input type="text" id="search-input" placeholder="Buscar" />
+              <a href="resultados.html"
+                ><button id="search-button">
+                  <i class="fas fa-search"></i></button
+              ></a>
+            </div>
+          </li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li id="restricted-area" class="restricted-area">
+            <a href="perfil.html">Mi perfil</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li id="search-li">
-          <div class="search-container">
-            <input type="text" id="search-input" placeholder="Buscar">
-            <a href="resultados.html"><button id="search-button"><i class="fas fa-search"></i></button></a>
+    <main>
+      <section class="hero animate-fade-in">
+        <div class="hero-content">
+          <h1>Bienvenido a APOAA</h1>
+          <p>Salvando vidas y brindando hogares a los animales necesitados</p>
+          <a href="#" class="cta-button">¡Dona ahora!</a>
+        </div>
+      </section>
+      <div class="contains">
+        <section class=" animate-fade-in box-contains">
+          <h2>Acerca de APOAA</h2>
+          <div>
+            <p>
+              La Asociación Protectora Olavarriense del Animal Abandonado
+              (Protectora APOA) surgió en el año 2001 en un contexto en donde,
+              la población canina y felina, era controlada a través del
+              sacrificio de los animales ,la protectora surgió con la necesidad
+              de poder resguardarlos en algún lugar. La protectora cuenta con un
+              predio el cual cuenta con varios caniles y aproximadamente 140
+              perros, los cuales son vacunados, castrados, curados si es
+              necesario y dados en adopción.
+            </p>
           </div>
-        </li>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li id="restricted-area" class="restricted-area"><a href="perfil.html">Mi perfil</a></li>
-      </ul>
-    </nav>
-  </header>
+        </section>
 
-  <main>
-    <section class="hero animate-fade-in">
-      <div class="hero-content">
-        <h1>Bienvenido a APOAA</h1>
-        <p>Salvando vidas y brindando hogares a los animales necesitados</p>
-        <a href="#" class="cta-button">¡Dona ahora!</a>
+        <section class=" animate-fade-in box-contains">
+          <h2>Casos de éxito</h2>
+          <div >
+            <p>
+              La Protectora, Carina Gil Hablando de las adopciones, destacó que
+              durante el año 2020, muchos perros fueron dados en adopción e
+              indicó que durante la pandemia “la metodología fue solicitar
+              hogares de tránsito para perritos mayores, esa fue la idea. Y, la
+              mayoría de los perritos mayores que fueron a tránsito,
+              consiguieron hogar. Porque la gente permanecía en sus casas, y
+              bueno, después nadie los quería devolver, se dieron cuenta de que
+              podían, que no solamente querían que sea un tránsito, querían que
+              fuera de forma permanente”
+            </p>
+          </div>
+        </section>
       </div>
-    </section>
 
-    <section class="about animate-fade-in">
-      <div class="about-content">
-        <h2>Acerca de APOAA</h2>
-        <p>Descripción de la organización y su misión.</p>
-      </div>
-    </section>
+      <section class="call-to-action animate-fade-in">
+        <h2>¡Ayúdanos a hacer la diferencia!</h2>
+        <a href="#" class="cta-button">Adopta un animal</a>
+        <a href="#" class="cta-button">Haz una donación</a>
+      </section>
+    </main>
 
-        
-
-    <section class="success-stories animate-fade-in">
-      <h2>Casos de éxito</h2>
-      <div class="success-stories-grid">
-        <!-- Mostrar casos de éxito con imágenes y descripciones -->
-      </div>
-    </section>
-
-    <section class="call-to-action animate-fade-in">
-      <h2>¡Ayúdanos a hacer la diferencia!</h2>
-      <a href="#" class="cta-button">Adopta un animal</a>
-      <a href="#" class="cta-button">Haz una donación</a>
-    </section>
-  </main>
-
-  <footer>
-    <p>Derechos de autor &copy; 2023 APOAA. Todos los derechos reservados.</p>
-  </footer>
-  <script src="session.js"></script>
-  <script src="script.js"></script>
-</body>
+    <footer>
+      <p>Derechos de autor &copy; 2023 APOAA. Todos los derechos reservados.</p>
+    </footer>
+    <script src="session.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
