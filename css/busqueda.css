@@ -3,15 +3,31 @@
 }
 
 .search-container {
-  display: flex;
   align-items: center;
   background-color: #fff;
   border-radius: 20px;
   padding: 5px;
   transition: width 0.3s;
   overflow: hidden;
+  display: flex;
 }
 
+.search-container {
+  
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  padding: 5px;
+}
+
+.search-container input[type="submit"] {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
 #search-input {
   flex: 1;
   border: none;
@@ -62,4 +78,19 @@
 .result-item.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-left: 20px;
 }
