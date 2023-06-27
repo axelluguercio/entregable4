@@ -383,3 +383,26 @@ footer p {
 .restricted-area {
   display: none;
 }
+
+.container-info{
+  width:80vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.container-info > section{
+  width: 50%;
+  margin: 0 10px;
+}
+.container-info > section >div {
+  background-color: rgb(150, 218, 150);
+  border-radius: 7px;
+}
+.container-info > section >div > h2{
+  text-align: center;
+}
+.container-info > section >div > p{
+  text-align: justify;
+  padding: 10px;
+}
