@@ -39,34 +39,21 @@
     <section class="profile-section">
       <h1>Mi Perfil</h1>
       <form class="profile-form" action="#" method="POST">
-        <div class="form-group">
+        <!-- creo checkbox para marcar los intereses del usuario -->
+        <label for="intereses"> Adopcion
+          <input type="checkbox" name="intereses" id="intereses" value="ado">
 
-          <div class="form-group">
-            <label for="telefono">Contacto</label>
-            <input type="text" id="apellido" name="apellido" required>
-          </div>
+        </label>
 
-          <div class="form-group">
-            <label for="interests">Intereses:</label>
-            <select id="mySelect" multiple>
-              <option value="1">Deportes</option>
-              <option value="2">Arte y cultura</option>
-              <option value="3">Música</option>
-              <option value="4">Viajes</option>
-              <option value="5">Cocina</option>
-              <option value="6">Tecnología</option>
-              <option value="7">Manualidades</option>
-              <option value="8">Fotografía</option>
-              <option value="9">Jardinería</option>
-              <option value="10">Animales</option>
-            </select>
-          </div>
+
+
+
           
           <button type="submit">Guardar</button>
       </form>
     </section>
 
-    <h2>Slider opcion 1</h2>
+    <h2>Publicaciones destacadas</h2>
     <div class="container-slider">
       <div class="contenedor">
         <input type="radio" name="slider" id="item1" checked>

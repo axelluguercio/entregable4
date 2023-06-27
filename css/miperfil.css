@@ -179,3 +179,10 @@
     opacity:1;
     filter:contrast(120%);
   }
+  form{
+    background-color: rgb(232, 253, 246);
+  }
+  .profile-section{
+    width:80vw;
+    border: solid 2px;
+  }
