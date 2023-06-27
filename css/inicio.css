@@ -131,6 +131,7 @@ footer {
   text-align: center;
   width: 80vw;
   border-radius:10px;
+  box-shadow: #555 0px 0px 10px;
 }
 
 /* Estilos del hero */
@@ -193,6 +194,8 @@ footer {
   text-align: center;
   padding: 40px;
   opacity: 0;
+  border-radius:10px;
+  box-shadow: #555 0px 0px 10px;
   animation: fade-in 1s ease-in-out forwards;
 }
 
