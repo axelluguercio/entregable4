@@ -3,6 +3,7 @@
   --secondary-color: #ffffff;  /* Blanco */
   --accent-color: #fa3419;  /* Coral */
   --text-color: #333;  /* Negro */
+  --pivot-color: #f7c081;
 }
 
 main {
@@ -379,7 +380,7 @@ footer p {
   .about,
   .success-stories,
   .call-to-action {
-    padding: 10px;
+    padding: 5px;
   }
 }
 
@@ -399,7 +400,7 @@ footer p {
   margin: 0 10px;
 }
 .container-info > section >div {
-  background-color: rgb(150, 218, 150);
+  background-color: var(--pivot-color);
   border-radius: 7px;
 }
 .container-info > section >div > h2{
