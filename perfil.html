@@ -40,10 +40,18 @@
       <h1>Mi Perfil</h1>
       <form class="profile-form" action="#" method="POST">
         <!-- creo checkbox para marcar los intereses del usuario -->
-        <label for="intereses"> Adopcion
-          <input type="checkbox" name="intereses" id="intereses" value="ado">
+       <input type="text" placeholder="Nombre completo">
+        <input type="text" placeholder="Correo electrónico">
+        <input type="text" placeholder="Teléfono">
+        <input type="text" placeholder="Ciudad">
+        <select name="interes" id="interes">
+          <option value="adopcion"> Adopcion</option>
+          <option value="donacion" selected> Donación</option >
+          <option value="transito"> Transito</option>
+          <option value="voluntario"> Voluntario</option>
+        </select>
 
-        </label>
+
 
 
 

@@ -1,72 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>APOAA</title>
-  <link rel="stylesheet" href="css/busqueda.css">
-  <link rel="stylesheet" href="css/resultados.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="css/inicio.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li id="search-li">
-          <div class="search-container">
-            <input type="text" id="search-input" placeholder="Buscar">
-            <a href="resultados.html"><button id="search-button"><i class="fas fa-search"></i></button></a>
-          </div>
-        </li>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li id="restricted-area" class="restricted-area">Mi perfil</li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="search-results">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APOAA</title>
+    <link rel="stylesheet" href="css/busqueda.css" />
+    <link rel="stylesheet" href="css/resultados.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/inicio.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <!-- <li><a href="#">About</a></li> -->
+          <li><a href="login.html">Login</a></li>
+          <li id="restricted-area" class="restricted-area">Mi perfil</li>
+        </ul>
+        <ul>
+          <li id="search-li">
+            <div class="search-container">
+              <input type="text" id="search-input" placeholder="Buscar" />
+              <a href="resultados.html"
+                ><button id="search-button">
+                  <i class="fas fa-search"></i></button
+              ></a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="search-results">
         <h2>Resultados de búsqueda</h2>
         <ul class="result-list">
           <li class="result-item">
             <div class="news-card">
-              <img src="img/perro5.jpg" alt="Imagen de la noticia">
-              <p>"Estudio revela que los perros pueden entender el lenguaje humano": Según una investigación reciente, los perros pueden comprender palabras y frases específicas en el lenguaje humano. El estudio encontró que los perros son capaces de procesar el significado de las palabras a través de su entrenamiento y experiencia con los humanos. </p>
+              <img src="img/perro5.jpg" alt="Imagen de la noticia" />
+              <p>
+                "Estudio revela que los perros pueden entender el lenguaje
+                humano": Según una investigación reciente, los perros pueden
+                comprender palabras y frases específicas en el lenguaje humano.
+                El estudio encontró que los perros son capaces de procesar el
+                significado de las palabras a través de su entrenamiento y
+                experiencia con los humanos.
+              </p>
             </div>
           </li>
           <li class="result-item">
             <div class="news-card">
-              <img src="img/perro1.jpg" alt="Imagen de la noticia">
-              <p>"Perro héroe rescata a su dueño de un incendio": En una historia inspiradora, un perro valiente fue el salvador de su dueño durante un incendio en su hogar. El perro detectó el peligro y despertó a su dueño ladrando y saltando sobre él, permitiéndole escapar a salvo antes de que las llamas se propagaran.</p>
+              <img src="img/perro1.jpg" alt="Imagen de la noticia" />
+              <p>
+                "Perro héroe rescata a su dueño de un incendio": En una historia
+                inspiradora, un perro valiente fue el salvador de su dueño
+                durante un incendio en su hogar. El perro detectó el peligro y
+                despertó a su dueño ladrando y saltando sobre él, permitiéndole
+                escapar a salvo antes de que las llamas se propagaran.
+              </p>
             </div>
           </li>
           <li class="result-item">
             <div class="news-card">
-              <img src="img/perro2.jpg" alt="Imagen de la noticia">
-              <p> "Perro callejero encuentra un hogar permanente después de una emotiva campaña en redes sociales": La historia de un perro callejero que fue rescatado y posteriormente adoptado después de que las fotos de su dulce rostro se hicieran virales en las redes sociales ha conmovido a miles de personas. La campaña en línea generó conciencia sobre la importancia de adoptar perros en situación de calle.</p>
-            </div>  
-          </li>
-          <li class="result-item">
-            <div class="news-card">
-              <img src="img/perro3.jpg" alt="Imagen de la noticia">
-              <p> "Perro con habilidades sorprendentes gana el concurso de agilidad canina": En una competencia de agilidad canina, un perro demostró su destreza y habilidad excepcionales al superar todos los obstáculos en un tiempo récord. Los espectadores quedaron impresionados por la velocidad y la precisión del perro en el recorrido.</p>
+              <img src="img/perro2.jpg" alt="Imagen de la noticia" />
+              <p>
+                "Perro callejero encuentra un hogar permanente después de una
+                emotiva campaña en redes sociales": La historia de un perro
+                callejero que fue rescatado y posteriormente adoptado después de
+                que las fotos de su dulce rostro se hicieran virales en las
+                redes sociales ha conmovido a miles de personas. La campaña en
+                línea generó conciencia sobre la importancia de adoptar perros
+                en situación de calle.
+              </p>
             </div>
           </li>
           <li class="result-item">
             <div class="news-card">
-              <img src="img/perro4.jpg" alt="Imagen de la noticia">
-              <p>"Investigadores descubren cómo los perros pueden detectar enfermedades": Investigadores han encontrado evidencia de que los perros tienen la capacidad de detectar ciertas enfermedades en los seres humanos, como el cáncer o la diabetes. Su olfato altamente desarrollado les permite identificar cambios sutiles en el olor corporal de las personas enfermas.</p>
+              <img src="img/perro3.jpg" alt="Imagen de la noticia" />
+              <p>
+                "Perro con habilidades sorprendentes gana el concurso de
+                agilidad canina": En una competencia de agilidad canina, un
+                perro demostró su destreza y habilidad excepcionales al superar
+                todos los obstáculos en un tiempo récord. Los espectadores
+                quedaron impresionados por la velocidad y la precisión del perro
+                en el recorrido.
+              </p>
+            </div>
+          </li>
+          <li class="result-item">
+            <div class="news-card">
+              <img src="img/perro4.jpg" alt="Imagen de la noticia" />
+              <p>
+                "Investigadores descubren cómo los perros pueden detectar
+                enfermedades": Investigadores han encontrado evidencia de que
+                los perros tienen la capacidad de detectar ciertas enfermedades
+                en los seres humanos, como el cáncer o la diabetes. Su olfato
+                altamente desarrollado les permite identificar cambios sutiles
+                en el olor corporal de las personas enfermas.
+              </p>
             </div>
           </li>
         </ul>
-    </div>
-  </main>
-  <footer>
-    <p>Derechos de autor &copy; 2023 APOAA. Todos los derechos reservados.</p>
-  </footer>
-  <script src="session.js"></script>
-  <script src="script.js"></script>
-</body>
+      </div>
+    </main>
+    <footer>
+      <p>Derechos de autor &copy; 2023 APOAA. Todos los derechos reservados.</p>
+    </footer>
+    <script src="session.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
