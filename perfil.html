@@ -1,88 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio - APOAA</title>
+    <link rel="stylesheet" href="css/busqueda.css" />
+    <link rel="stylesheet" href="css/inicio.css" />
+    <link rel="stylesheet" href="./css/miperfil.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio - APOAA</title>
-  <link rel="stylesheet" href="css/busqueda.css">
-  <link rel="stylesheet" href="css/inicio.css">
-  <link rel="stylesheet" href="./css/miperfil.css">
- 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
 
-  
-</head>
-
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li id="restricted-area" class="restricted-area"><a href="perfil.html">Mi perfil</a></li>
-
-      </ul>
-      <ul>
-        <li id="search-li">
-          <div class="search-container">
-            <input type="text" id="search-input" placeholder="Buscar">
-            <a href="resultados.html"><button id="search-button"><i class="fas fa-search"></i></button></a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-
-  <main>
-    <section class="profile-section">
-      <h1>Mi Perfil</h1>
-      <form class="profile-form" action="#" method="POST">
-        <!-- creo checkbox para marcar los intereses del usuario -->
-       <input type="text" placeholder="Nombre completo">
-        <input type="text" placeholder="Correo electrónico">
-        <input type="text" placeholder="Teléfono">
-        <input type="text" placeholder="Ciudad">
-        <select name="interes" id="interes">
-          <option value="adopcion"> Adopcion</option>
-          <option value="donacion" selected> Donación</option >
-          <option value="transito"> Transito</option>
-          <option value="voluntario"> Voluntario</option>
-        </select>
-
-
-
-
-
-
-          
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li id="restricted-area" class="restricted-area">
+            <a href="perfil.html">Mi perfil</a>
+          </li>
+        </ul>
+        <ul>
+          <li id="search-li">
+            <div class="search-container">
+              <input type="text" id="search-input" placeholder="Buscar" />
+              <a href="resultados.html"
+                ><button id="search-button">
+                  <i class="fas fa-search"></i></button
+              ></a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="profile-section">
+        <h2>Mi Perfil</h2>
+        <form class="profile-form" action="#" method="POST">
+          <!-- creo checkbox para marcar los intereses del usuario -->
+          <label for="nombre" ><small>Nombre completo</small>
+            <input type="text" placeholder="Nombre completo" />
+          </label>
+          <label for="email" ><small>Correo electrónico</small>
+            <input type="text" placeholder="Correo electrónico" />
+          </label>
+          <label for="telefono" ><small>Teléfono</small>
+            <input type="text" placeholder="Teléfono" />
+          </label>
+          <label for="ciudad" ><small>Ciudad</small>
+            <input type="text" placeholder="Ciudad" />
+          </label>
+          <input type="radio" name="intereses" id="intereses">
+          <label for="interes" ><small>Intereses</small></label>
+          <label for="interes" ><small>Adopción</small>
+            <input type="checkbox" name="intereses" id="intereses">
+          </label>
+          <label for="interes" ><small>Donación</small>
+            <input type="checkbox" name="intereses" id="intereses" checked>
+          </label>
+          <label for="interes" ><small>Transito</small>
+            <input type="checkbox" name="intereses" id="intereses">
+          </label>
+          <label for="interes" ><small>Voluntario</small>
+            <input type="checkbox" name="intereses" id="intereses">
+          </label>
           <button type="submit">Guardar</button>
-      </form>
-    </section>
+        </form>
+      </section>
 
-    <h2>Publicaciones destacadas</h2>
-    <div class="container-slider">
-      <div class="contenedor">
-        <input type="radio" name="slider" id="item1" checked>
-        <input type="radio" name="slider" id="item2">
-        <input type="radio" name="slider" id="item3">
+      <h2>Publicaciones destacadas</h2>
+      <div class="container-slider">
+        <div class="contenedor">
+          <input type="radio" name="slider" id="item1" checked />
+          <input type="radio" name="slider" id="item2" />
+          <input type="radio" name="slider" id="item3" />
 
-        <div class="cards">
-          <label class="card" for="item1" id="selector1">
-            <img src="./img/perro1.jpg" alt="">
-          </label>
-          <label class="card" for="item2" id="selector2">
-            <img src="./img/perro2.jpg" alt="">
-          </label>
-          <label class="card" for="item3" id="selector3">
-            <img src="./img/perro3.jpg" alt="">
-          </label>
-          
+          <div class="cards">
+            <label class="card" for="item1" id="selector1">
+              <img src="./img/perro1.jpg" alt="" />
+            </label>
+            <label class="card" for="item2" id="selector2">
+              <img src="./img/perro2.jpg" alt="" />
+            </label>
+            <label class="card" for="item3" id="selector3">
+              <img src="./img/perro3.jpg" alt="" />
+            </label>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- <h2>Slider opcion 2</h2>
+      <!-- <h2>Slider opcion 2</h2>
     <div class="slider2">
       <section class="slider-section">
         <img src="./img/perro1.jpg" alt="">
@@ -93,13 +103,11 @@
         
       </section>
     </div> -->
-  </main>
-  <footer>
-    <p>Derechos de autor &copy; 2023 APOAA. Todos los derechos reservados.</p>
-  </footer>
-  <script src="session.js"></script>
-  <script src="script.js"></script>
-
-</body>
-
+    </main>
+    <footer>
+      <p>Derechos de autor &copy; 2023 APOAA. Todos los derechos reservados.</p>
+    </footer>
+    <script src="session.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

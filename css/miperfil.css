@@ -183,10 +183,26 @@
     background-color: rgb(232, 253, 246);
   }
   .profile-section{
-    width:80vw;
-    border: solid 1px;
+    width:60vw;
+    background-color: #fff;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)!important;
     padding:3%;
+  }
+
+  .profile-section > input[type="text"]{
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid #2e2626;
+    margin-bottom: 20px;
+  }
+  .profile-section > h2{
+    text-align: center;
+    width:100%;
+    justify-content: center;
+    padding-bottom:2%;
   }
 select{
   width: 50%;
