@@ -20,10 +20,16 @@
         <div class="logo"></div>
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="login.html">Login</a></li>
+          <!-- <li><a href="login.html">Login</a></li>
           <li id="restricted-area" class="restricted-area">
             <a href="perfil.html">Mi perfil</a>
-          </li>
+          </li> 
+          creo una dropdown list para el usuario
+        -->
+
+          <a href="perfil.html"
+            ><a><i class="fas fa-user"></i></a>Mi perfil</a
+          >
         </ul>
         <ul>
           <li id="search-li">
@@ -35,6 +41,14 @@
               ></a>
             </div>
           </li>
+          <div class="logout">
+            <li id="logout-li">
+              <a href="index.html"
+                ><button id="logout-button">
+                  <i class="fas fa-sign-out-alt"></i> Logout</button
+              ></a>
+            </li>
+          </div>
         </ul>
       </nav>
     </header>
@@ -60,7 +74,8 @@
             <input type="text" placeholder="Ciudad" />
           </label>
           <section class="section-radio-intereses">
-            <div style="width:100%"><input type="radio" name="intereses" id="intereses" />
+            <div style="width: 100%">
+              <input type="radio" name="intereses" id="intereses" />
               <label for="interes">Intereses</label>
             </div>
             <label for="interes" class="radio-intereses"
@@ -84,7 +99,7 @@
         </form>
       </section>
 
-      <h2>Publicaciones destacadas</h2>
+      <h2 class="slider-title">Publicaciones destacadas</h2>
       <div class="container-slider">
         <div class="contenedor">
           <input type="radio" name="slider" id="item1" checked />
