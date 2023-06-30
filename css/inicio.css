@@ -141,6 +141,8 @@ footer {
   background-position: center;
   width: 60px;
   height: 55px; 
+  box-shadow: #ddd1d1 0px 0px 10px;
+  border-radius: 100%;
 }
 /* Estilos del hero */
 .hero-image {
