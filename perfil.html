@@ -43,32 +43,43 @@
         <h2>Mi Perfil</h2>
         <form class="profile-form" action="#" method="POST">
           <!-- creo checkbox para marcar los intereses del usuario -->
-          <label for="nombre" ><small>Nombre completo</small>
+          <label for="nombre"
+            ><small>Nombre completo</small>
             <input type="text" placeholder="Nombre completo" />
           </label>
-          <label for="email" ><small>Correo electrónico</small>
+          <label for="email"
+            ><small>Correo electrónico</small>
             <input type="text" placeholder="Correo electrónico" />
           </label>
-          <label for="telefono" ><small>Teléfono</small>
+          <label for="telefono"
+            ><small>Teléfono</small>
             <input type="text" placeholder="Teléfono" />
           </label>
-          <label for="ciudad" ><small>Ciudad</small>
+          <label for="ciudad"
+            ><small>Ciudad</small>
             <input type="text" placeholder="Ciudad" />
           </label>
-          <input type="radio" name="intereses" id="intereses">
-          <label for="interes" ><small>Intereses</small></label>
-          <label for="interes" ><small>Adopción</small>
-            <input type="checkbox" name="intereses" id="intereses">
-          </label>
-          <label for="interes" ><small>Donación</small>
-            <input type="checkbox" name="intereses" id="intereses" checked>
-          </label>
-          <label for="interes" ><small>Transito</small>
-            <input type="checkbox" name="intereses" id="intereses">
-          </label>
-          <label for="interes" ><small>Voluntario</small>
-            <input type="checkbox" name="intereses" id="intereses">
-          </label>
+          <section class="section-radio-intereses">
+            <div style="width:100%"><input type="radio" name="intereses" id="intereses" />
+              <label for="interes">Intereses</label>
+            </div>
+            <label for="interes" class="radio-intereses"
+              ><small>Adopción</small>
+              <input type="checkbox" name="intereses" id="intereses" />
+            </label>
+            <label for="interes" class="radio-intereses"
+              ><small>Donación</small>
+              <input type="checkbox" name="intereses" id="intereses" checked />
+            </label>
+            <label for="interes" class="radio-intereses"
+              ><small>Transito</small>
+              <input type="checkbox" name="intereses" id="intereses" />
+            </label>
+            <label for="interes" class="radio-intereses"
+              ><small>Voluntario</small>
+              <input type="checkbox" name="intereses" id="intereses" />
+            </label>
+          </section>
           <button type="submit">Guardar</button>
         </form>
       </section>
