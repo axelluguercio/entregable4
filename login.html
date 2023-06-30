@@ -12,26 +12,35 @@
 <body>
   <header>
     <nav>
+      <div class="logo"></div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li id="restricted-area" class="restricted-area">
+          <a href="perfil.html">Mi perfil</a>
+        </li>
+      </ul>
+
       <ul>
         <li id="search-li">
           <div class="search-container">
-            <input type="text" id="search-input" placeholder="Buscar">
-            <a href="resultados.html"><button id="search-button"><i class="fas fa-search"></i></button></a>
+            <input type="text" id="search-input" placeholder="Buscar" />
+            <a href="resultados.html"
+              ><button id="search-button">
+                <i class="fas fa-search"></i></button
+            ></a>
           </div>
         </li>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li id="restricted-area" class="restricted-area"><a href="perfil.html">Mi perfil</a></li>
       </ul>
     </nav>
   </header>
 <main>
+  <h2>Iniciar sesión</h2>
     <section class="login-section">
         <div class="login-container">
-        <h2>Iniciar sesión o registrarse</h2>
         <form class="login-form">
-            <input type="text" placeholder="Nombre de usuario" required>
-            <input type="password" placeholder="Contraseña" required>
+            <label> <small>Nombre de Usuario</small><input type="text" placeholder="Nombre de usuario" required></label>
+            <label> <small>Contrasena</small><input type="password" placeholder="Contraseña" required></label>
             <button type="submit">Iniciar sesión</button>
         </form>
         <p>¿No tienes una cuenta? <a href="register.html">Regístrate aquí</a></p>

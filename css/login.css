@@ -50,7 +50,7 @@
   
   .login-section .form-footer {
     margin-top: 20px;
-    text-align: center;
+    text-align: left;
   }
   
   .login-section .form-footer a {
@@ -61,4 +61,15 @@
   .login-section .form-footer a:hover {
     text-decoration: underline;
   }
+
+  .login-form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
   
+  .login-form label small {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+  }

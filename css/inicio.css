@@ -135,6 +135,13 @@ footer {
   box-shadow: #555 0px 0px 10px;
 }
 
+.logo {
+  background-image: url('../img/logo.png');
+  background-size: cover;
+  background-position: center;
+  width: 60px;
+  height: 55px; 
+}
 /* Estilos del hero */
 .hero-image {
   background-image: url('../img/banner.jpeg');
@@ -321,7 +328,7 @@ footer p {
 
 /* Media queries para la responsividad */
 @media screen and (max-width: 768px) {
-  /* Agrega estilos específicos para dispositivos móviles y tablets */
+  /* Estilos generales para dispositivos móviles y tablets */
   header {
     padding: 10px;
   }
@@ -351,13 +358,25 @@ footer p {
 
   .about,
   .success-stories,
-  .call-to-action {
+  .call-to-action,
+  .login-section,
+  .register-section,
+  .search-results {
     padding: 20px;
+  }
+
+  .container-info {
+    flex-direction: column;
+  }
+
+  .container-info > section {
+    width: 100%;
+    margin: 10px 0;
   }
 }
 
 @media screen and (max-width: 480px) {
-  /* Agrega estilos específicos para dispositivos móviles más pequeños */
+  /* Estilos específicos para dispositivos móviles más pequeños */
   .hero {
     height: 200px;
   }
@@ -379,7 +398,10 @@ footer p {
 
   .about,
   .success-stories,
-  .call-to-action {
+  .call-to-action,
+  .login-section,
+  .register-section,
+  .search-results {
     padding: 5px;
   }
 }
@@ -388,25 +410,28 @@ footer p {
   display: none;
 }
 
-.container-info{
-  width:80vw;
+.container-info {
+  width: 80vw;
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
 
-.container-info > section{
+.container-info > section {
   width: 50%;
   margin: 0 10px;
 }
-.container-info > section >div {
+
+.container-info > section > div {
   background-color: var(--pivot-color);
   border-radius: 7px;
 }
-.container-info > section >div > h2{
+
+.container-info > section > div > h2 {
   text-align: center;
 }
-.container-info > section >div > p{
+
+.container-info > section > div > p {
   text-align: justify;
   padding: 10px;
 }
