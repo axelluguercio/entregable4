@@ -452,17 +452,17 @@ footer p {
   display: none;
 }
 
-/* .container-info {
+.container-info {
   width: 80vw;
   display: flex;
   justify-content: center;
   flex-direction: row;
-} */
+} 
 
-/* .container-info > section {
+.container-info > section {
   width: 50%;
   margin: 0 10px;
-} */
+}
 
 .container-info > section > div {
   background-color: var(--pivot-color);
