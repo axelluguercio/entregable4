@@ -375,8 +375,8 @@ footer p {
 
   .container-info {
     display:flex;
-    flex-direction: column;
-    width: 100vw;
+    flex-direction: column !important;
+    width: 100vw !important;
   }
   .about,
   .success-stories,
@@ -393,6 +393,7 @@ footer p {
   }
   .container-info > section{
     padding: 0%;
+    width: 100% !important;
   }
   
   
