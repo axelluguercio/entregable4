@@ -7,7 +7,6 @@
 }
 
 main {
-  /* margin: 5 auto !important; Agrega margen automático en la parte superior e inferior y centrado horizontalmente */
   max-width: 100%; /* Establece el ancho máximo */
   padding: 1%; /* Agrega un relleno interno */
   display:flex;
@@ -209,17 +208,6 @@ footer {
   animation: fade-in 1s ease-in-out forwards;
 }
 
-@keyframes fade-in {
-  0% {
-      opacity: 0;
-      transform: translateY(20px);
-  }
-  100% {
-      opacity: 1;
-      transform: translateY(0);
-  }
-}
-
 .hero-content {
   text-align: center;
   z-index: 2;
@@ -404,7 +392,7 @@ footer p {
   .login-section,
   .register-section,
   .search-results {
-    padding: 5px;
+    padding: 1px;
   }
 }
 
@@ -437,3 +425,4 @@ footer p {
   text-align: justify;
   padding: 10px;
 }
+
