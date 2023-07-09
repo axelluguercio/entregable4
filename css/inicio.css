@@ -3,7 +3,6 @@
   --secondary-color: #ffffff;  /* Blanco */
   --accent-color: #fa3419;  /* Coral */
   --text-color: #333;  /* Negro */
-  --pivot-color: #f7c081;
 }
 
 main {
@@ -73,13 +72,10 @@ header {
   width:75vw;
 }
 /* Estilos de la sección Acerca de */
-.about {
-  background-color: var(--secondary-color);
-}
 
 .about h2,
 .about p {
-  color: var(--text-color);
+  color: var(--secondary-color);
 }
 
 /* Estilos generales */
@@ -245,7 +241,7 @@ footer {
 }
 
 .cta-button:hover {
-background-color: #555;
+background-color: var(--text-color);
 }
 
 /* Estilos de la sección Acerca de */
@@ -265,6 +261,7 @@ background-color: #555;
 /* Estilos de Casos de éxito */
 .success-stories {
   padding: 40px;
+  color: var(--secondary-color)
 }
 
 .success-stories h2 {
@@ -373,11 +370,21 @@ footer p {
     font-size: 14px;
   }
 
+  /* Estilos específicos para dispositivos móviles de hasta 780px */
   .container-info {
-    display:flex;
-    flex-direction: column !important;
-    width: 100vw !important;
+    flex-direction: column;
   }
+
+  .container-info > section {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px; /* Ajustamos el padding para dispositivos móviles */
+  }
+
+  .container-info > section > div {
+    padding: 15px; /* Ajustamos el padding interno para dispositivos móviles */
+  }
+
   .about,
   .success-stories,
   .call-to-action,
@@ -393,7 +400,6 @@ footer p {
   }
   .container-info > section{
     padding: 0%;
-    width: 100% !important;
   }
   
   
@@ -431,6 +437,21 @@ footer p {
     font-size: 12px;
   }
 
+  /* Estilos específicos para dispositivos móviles de hasta 480px */
+  .container-info {
+    flex-direction: column;
+  }
+
+  .container-info > section {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px; /* Ajustamos el padding para dispositivos móviles */
+  }
+
+  .container-info > section > div {
+    padding: 10px; /* Ajustamos el padding interno para dispositivos móviles */
+  }
+
   .about,
   .success-stories,
   .call-to-action,
@@ -453,6 +474,7 @@ footer p {
   display: none;
 }
 
+/*/
 .container-info {
   width: 80vw;
   display: flex;
@@ -479,3 +501,35 @@ footer p {
   padding: 10px;
 }
 
+/*/
+
+.container-info {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container-info > section {
+  width: 50%;
+  margin: 0 10px;
+  box-sizing: border-box; /* Ajustamos el modelo de caja para incluir el borde */
+  padding: 20px;
+}
+
+.container-info > section > div {
+  background-color: var(--primary-color);
+  border-radius: 7px;
+  padding: 10px; /* Ajustamos el relleno interno para evitar que el contenido toque el borde */
+}
+
+.container-info > section > div > h2 {
+  text-align: center;
+  margin-bottom: 10px; /* Agregamos un margen inferior para separar el título del contenido */
+}
+
+.container-info > section > div > p {
+  text-align: justify;
+}
