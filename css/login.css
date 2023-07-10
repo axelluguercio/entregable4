@@ -39,6 +39,7 @@
     background-color: var(--accent-color);
     color: var(--secondary-color);
     font-size: 16px;
+    font-weight: bold;
     border: none;
     border-radius: 3px;
     cursor: pointer;

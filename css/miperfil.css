@@ -269,7 +269,7 @@ select{
   cursor: pointer;
   transition: background-color 0.3s;
   padding: 10px 20px;
-  color: #ccc;
+  color: #fff;
   font-size: 12px;
   margin-top: 2%;
 }
