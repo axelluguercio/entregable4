@@ -273,3 +273,15 @@ select{
   font-size: 12px;
   margin-top: 2%;
 }
+
+#mensaje{
+  font-size: 12px;
+  padding-bottom: 2%;
+  background-color: #fff;
+}
+.texto-verde{
+  color:green;
+}
+.texto-rojo{
+  color:red;
+}

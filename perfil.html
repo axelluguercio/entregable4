@@ -55,23 +55,23 @@
     <main>
       <section class="profile-section">
         <h2>Mi Perfil</h2>
-        <form class="profile-form" action="#" method="POST">
+        <form class="profile-form" id="perfil-form" action="#" method="POST">
           <!-- creo checkbox para marcar los intereses del usuario -->
           <label for="nombre"
             ><small>Nombre completo</small>
-            <input type="text" placeholder="Nombre completo" />
+            <input type="text" placeholder="Nombre completo" id="nombre" />
           </label>
           <label for="email"
             ><small>Correo electrónico</small>
-            <input type="text" placeholder="Correo electrónico" />
+            <input type="text" placeholder="Correo electrónico" id="mail" />
           </label>
           <label for="telefono"
             ><small>Teléfono</small>
-            <input type="text" placeholder="Teléfono" />
+            <input type="text" placeholder="Teléfono" id="telefono" />
           </label>
           <label for="ciudad"
             ><small>Ciudad</small>
-            <input type="text" placeholder="Ciudad" />
+            <input type="text" placeholder="Ciudad" id="ciudad"/>
           </label>
           <section class="section-radio-intereses">
             <div style="width: 100%">
@@ -95,6 +95,7 @@
               <input type="checkbox" name="intereses" id="intereses" />
             </label>
           </section>
+          <div id="mensaje"></div>
           <button type="submit">Guardar</button>
         </form>
       </section>
@@ -137,4 +138,5 @@
     <script src="session.js"></script>
     <script src="script.js"></script>
   </body>
+  <script src="./js/perfil.js"></script>
 </html>

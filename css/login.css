@@ -74,3 +74,8 @@
     margin-bottom: 5px;
     text-align: left;
   }
+  #error{
+    color: red;
+    font-size: 12px;
+    padding-bottom: 2%;
+  }
